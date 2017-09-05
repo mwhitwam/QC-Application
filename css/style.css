@@ -1,0 +1,161 @@
+h1 {
+    color: midnightblue;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+
+body {
+    background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11pt;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+tr {
+    height: 1.1em;
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+tr:nth-child(odd) {
+    background-color: lightsteelblue;
+}
+
+td {
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 5em;
+}
+
+tr:hover {
+    background-color: darkseagreen;
+}
+
+th {
+    background-color: darkslateblue;
+    color: white;
+}
+
+#dvHead {
+    align-items: center;
+    background-color: cadetblue;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2.5em;
+    width: 100%;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+#dvHead img {
+    /*display: block;*/
+    position: relative;
+    height: 99%;
+}
+
+#dvHead h2 {
+    display: inline-block;
+    vertical-align: middle;
+    color: darkslategray;
+    cursor: default;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+
+#dvMenu {
+    background-color: cadetblue;
+    position: fixed;
+    top: 2.5em;
+    left: 0;
+    height: 100%;
+    width: 2.5em;
+    z-index: 1;
+}
+
+#dvMenu hr {
+    margin: 0.2em;
+    border-color: black;
+}
+
+#dvMenu div.menuButton {
+    /*background-color: gray;*/
+    cursor: default;
+    display: flex;
+    height: 2em;
+    margin-top: 0.1em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    margin-bottom: 0em;
+    overflow: hidden;
+    /*padding-top: 0.1em;*/
+    padding-left: 0.1em;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    z-index: 2;
+}
+
+#dvMenu div.menuButton:hover {
+    background-color: darkgray;
+    width: 20em;
+    z-index: 5;
+}
+
+#dvMenu div.menuButton:active {
+    background-color: white;
+}
+
+#dvMenu div.menuButton span {
+    visibility: hidden;
+    font-size: 1em;
+    padding-top: 0.25em;
+    padding-left: 0.25em;
+}
+
+#dvMenu div.menuButton:hover span {
+    visibility: visible;
+}
+
+#dvMain {
+    position: absolute;
+    top: 7.5%;
+    left: 10%;
+    width: 90%;
+    z-index: 0;
+}
+
+#dvMain p {
+    margin-left: 1em;
+}
+
+
+/*
+
+REMOVE THIS LATER MAYBE
+
+
+
+.tag:before {
+    content: '<';
+}
+
+.tag:after {
+    content: '>';
+}
+*/
